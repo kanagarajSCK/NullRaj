@@ -1,0 +1,64 @@
+.challenge-container {
+  padding: 3rem;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4ade80;
+  margin-bottom: 1rem;
+}
+
+.typing {
+  font-family: monospace;
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+  min-height: 30px;
+}
+
+.challenge-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.challenge-image {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+.challenge-image:hover {
+  transform: scale(1.05);
+}
+
+.hint-box {
+  background-color: #1e293b;
+  color: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.hint-title {
+  font-size: 1.2rem;
+  color: #60a5fa;
+  margin-bottom: 0.5rem;
+}
+
+.footer-note {
+  margin-top: 2rem;
+  color: #94a3b8;
+  font-style: italic;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

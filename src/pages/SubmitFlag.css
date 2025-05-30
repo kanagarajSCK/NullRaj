@@ -1,0 +1,89 @@
+.submit-flag-container {
+  max-width: 500px;
+  margin: 5rem auto;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 12px;
+  background: #1e293b;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.8s ease;
+}
+
+.submit-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+.submit-subtext {
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  animation: typewriter 2.5s steps(40, end);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #38bdf8;
+  width: 100%;
+}
+
+.flag-input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: #1e293b;
+}
+
+.shake {
+  animation: shake 0.4s;
+}
+
+.submit-btn {
+  margin-top: 1rem;
+  background-color: #22d3ee;
+  color: #1e293b;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #06b6d4;
+}
+
+.submit-message {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); }
+  75% { transform: translateX(-6px); }
+  100% { transform: translateX(0); }
+}
